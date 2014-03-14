@@ -3,6 +3,14 @@ compiler:
   - gcc
   - clang
 
+git:
+  submodules: false
+
+# whitelist
+branches:
+  only:
+    - travis
+
 # Install pre-reqs
 before_install:
   - sudo apt-get update -qq
@@ -23,4 +31,3 @@ install:
 after_script:
   - cd build_maidsafe
   - cmake ..
-  - make ExperCommon
