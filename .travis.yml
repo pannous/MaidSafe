@@ -3,11 +3,6 @@ compiler:
   - gcc
   - clang
 
-# whitelist
-branches:
-  only:
-    - travis
-
 # Install pre-reqs
 before_install:
   - sudo apt-get update -qq
